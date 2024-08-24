@@ -1,0 +1,16 @@
+﻿#root {
+    display: flex;
+    max-width: 1280px;
+    background-color: #333333;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    width: 1070px;
+    min-height: 100vh;
+}
+
+@media (max-width: 1070px) {
+    #root {
+        width: 100%;
+    }
+}
