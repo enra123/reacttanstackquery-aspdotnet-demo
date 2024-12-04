@@ -1,3 +1,4 @@
+﻿using AngleSharp;
 using IdentityCoreDapper.Factory;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,8 @@ namespace ReactAsp.Server
             builder.Services.AddAuthorization();
             builder.Services.AddIdentityApiEndpoints<Users>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            builder.Services.AddSingleton(BrowsingContext.New(AngleSharp.Configuration.Default.WithDefaultLoader()));
 
             // Add services to the container.
             builder.Services.AddControllers();

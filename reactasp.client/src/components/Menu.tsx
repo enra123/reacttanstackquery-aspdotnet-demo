@@ -57,7 +57,7 @@ export default function MenuBar() {
     ]
 
     const menuAccountItems = [
-        { name: 'Dashboard', navigateTo: '/weather' },
+        { name: 'WclScrape', navigateTo: '/wclscrape' },
     ]
 
     return (

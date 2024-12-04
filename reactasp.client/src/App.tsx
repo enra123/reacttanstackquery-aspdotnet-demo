@@ -8,6 +8,7 @@ import Home from './components/Home.tsx';
 import Login from './components/Login.tsx';
 import Register from './components/Register.tsx';
 import WeatherForecast from './components/WeatherForecast.tsx';
+import WclScrape from './components/WclScrape.tsx';
 import MenuBar from './components/Menu.tsx';
 import { AuthProvider } from './hooks/useAuth.tsx';
 import { ProtectedRoute, ReverseProtectedRoute } from "./components/AuthRoute.tsx";
@@ -44,6 +45,11 @@ export default function App() {
                                 <Route path="/weather" element={
                                     <ProtectedRoute>
                                         <WeatherForecast />
+                                    </ProtectedRoute>
+                                } />
+                                <Route path="/wclscrape" element={
+                                    <ProtectedRoute>
+                                        <WclScrape />
                                     </ProtectedRoute>
                                 } />
                             </Routes>

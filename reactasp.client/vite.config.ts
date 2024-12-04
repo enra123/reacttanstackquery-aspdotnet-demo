@@ -47,6 +47,10 @@ export default defineConfig({
                 target,
                 secure: false
             },
+            '^/wclscrape/': {
+                target,
+                secure: false
+            },
             '^/api/profile': {
                 target,
                 secure: false
